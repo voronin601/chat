@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="icon" href="data:;base64,=">
+		<title>...Entry</title>
+		<style>
+			body{
+			 margin: 0;
+			 padding: 0;
+			 background: PapayaWhip;
+			}
+			.container{
+			 padding-top: 82px;
+    			 padding-left: 460px;
+			}
+			.klick{
+			 float: left;
+			 margin-top: 30px;
+			 margin-right: 140px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="{{ url_for('started') }}" method="post"> 
+		<div class="container">
+			
+			<div>	
+				<p><font color='red'>{{messages['vhod']}}</font></p>
+				<p>Логин</p>
+				<input type="text" size="45" name="log">
+				<p>Пароль</p>
+				<input type="password" size="45" name="passw">
+			</div>
+			<div class="klick">
+				<input type="submit" value="Регистрация" name="regi">
+			</div>
+			<div class="klick">
+				<input type="submit" value="Вход" name="entry">
+			</div>
+			
+		</div>
+		</form>
+	</body>
+</html>

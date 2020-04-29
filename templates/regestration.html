@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+	<link rel="icon" href="data:;base64,=">
+		<title>Регистрация</title>
+		<style>
+		.center {
+			width: 200px; 
+			padding: 10px;
+			margin: auto;
+		}
+		</style>
+	</head>
+	<body bgcolor='#999191'>
+		<div class='center'>
+		<form action="{{ url_for('register') }}" method="post">
+		<p><font color='#9c261e'>{{error['er']}}</font></p>
+		<p>
+			<b>Введите Имя</b>
+			<input type="text" name='fnam'> 
+		</p>
+		<p>
+			<b>Введите фамилию</b>
+			<input type="text" name='lnam'>	 
+		</p>
+		<p>
+			<b>Придумайте Никнейм (Его будут видить пользователи)</b>
+			<input type="text" name='nm'> 
+		</p>
+		<p>
+			<b> Придумайте Пароль </b>
+			<input type="password" name='ps'> 
+		</p>
+		<p>
+			<input type="submit" value="Отправить" name="subm1">
+		</p>
+		</form>
+		</div>
+	</body>
+</html>
